@@ -1,0 +1,21 @@
+.decor {
+  position: absolute;
+  background: $red;
+  border-radius: 30px;
+
+  &_65 {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+  }
+
+  &_96 {
+    width: 96px;
+    height: 96px;
+  }
+
+  &_127 {
+    width: 127px;
+    height: 127px;
+  }
+}

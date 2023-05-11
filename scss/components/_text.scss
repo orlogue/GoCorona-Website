@@ -1,0 +1,30 @@
+.text {
+  &__title {
+    font-weight: 700;
+    font-size: 3.666em;
+    line-height: 1.26;
+    color: $primaryColor;
+
+    @media (max-width: 767.98px) {
+      font-size: 3em;
+    }
+
+    & span {
+      color: $red;
+    }
+
+    &_blue span {
+      color: $blue;
+    }
+  }
+
+  &__description {
+    line-height: 1.385;
+    margin-top: 1em;
+    max-width: 360px;
+  }
+
+  &__button {
+    margin-top: 2em;
+  }
+}

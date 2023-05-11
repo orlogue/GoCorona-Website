@@ -1,0 +1,41 @@
+@import "variables";
+@import "reset";
+
+body {
+  font-family: Rubik, Helvetica, Arial, "Times New Roman", sans-serif;
+  font-size: 12px;
+  color: $secondaryColor;
+  letter-spacing: 0.8px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1087px;
+  margin: 0 auto;
+  padding: 0 15px;
+  // PC
+  @media (max-width: 1087px) {
+    max-width: 970px;
+  }
+  // TABLET
+  @media (max-width: 991.98px) {
+    max-width: 750px;
+  }
+  // MOBILE
+  @media (max-width: 767.98px) {
+    max-width: none;
+  }
+  // MOBILE SMALL
+  @media (max-width: 479.98px) {
+  }
+}
+
+.page {
+  flex: 1 1 auto;
+}

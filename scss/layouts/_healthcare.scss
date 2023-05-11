@@ -1,0 +1,89 @@
+.healthcare {
+  &__body {
+    padding: 80px 50px 75px;
+
+    @media (max-width: 1087px) {
+      padding: 80px 15px 75px;
+    }
+
+    @media (max-width: 991.98px) {
+      padding: 80px 15px 30px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 40px 15px 30px;
+    }
+  }
+
+  &__text {
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+
+    & .text__description {
+      max-width: 600px;
+      margin-top: 14px;
+
+      @media (min-width: 768px) {
+        margin: 14px auto 0;
+      }
+    }
+  }
+
+  &__card-group {
+    margin: 46px 0 0 0;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 991.98px) {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__card {
+    max-width: 278px;
+    position: relative;
+
+    &_1 .decor_65 {
+      left: -25px;
+      bottom: -40px;
+      transform: rotate(-30deg);
+      z-index: -1;
+    }
+
+    &_1 .decor_96 {
+      right: -55px;
+      top: 40px;
+      transform: rotate(105deg);
+      z-index: -1;
+    }
+
+
+    &_2 .decor_127 {
+      bottom: -36px;
+      right: -92px;
+      transform: rotate(-30deg);
+      z-index: -1;
+    }
+
+    &_3 .decor_65 {
+      right: -26px;
+      top: -40px;
+      transform: rotate(-30deg);
+      z-index: -1;
+
+      @media (max-width: 991.98px) {
+        top: 236px;
+        left: -26px;
+        transform: rotate(-30deg);
+      }
+    }
+  }
+}
